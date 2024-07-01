@@ -44,7 +44,7 @@ namespace Plugin.Configuration
 
         
 
-        public static void Write()
+        public void Write()
         {
             using (var fs = new FileStream(FilePath, FileMode.Create, FileAccess.Write, FileShare.Write))
             using (var sw = new StreamWriter(fs, new UTF8Encoding(false)))
